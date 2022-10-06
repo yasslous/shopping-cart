@@ -1,0 +1,74 @@
+.heart {
+    content: "\2764";
+ 
+    }
+span {
+    content: "\2940";
+}
+span {
+    content: "\002B";
+}
+body {
+    background-color: white;
+    border-radius: 0mm;
+}
+nav {
+    color: rgb(166, 135, 222);
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+ 
+}
+.nutella {
+    height: 5cm;
+    width: 5cm;
+}
+.article {
+    margin: auto;
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.image {
+    width: 15%;
+    text-align: center;
+}
+.chocolat {
+    margin: auto;
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+}
+.minus {
+    content: "\002D";
+}
+#button {
+    color:black;
+}
+#input {
+    color: black;
+}
+.prix {
+    width: 83px;
+    padding-top: 27px;
+    text-align: center;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+}
+.quantity input {
+    -webkit-appearance: none;
+    border: none;
+    text-align: center;
+    width: 32px;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+  }
+   
