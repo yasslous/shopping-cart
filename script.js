@@ -21,21 +21,33 @@ function button() {
         choise = true ;
     }
 }
-// + and - items
-// + item
-function add() {
-    var value = input.getAttribute("value") ;
-    var prix = document.getElementsByClassName("prix") ; 
-    value = value + 1 ;
-    prix += prix ; 
+if(document.readyState == 'loading'){
+    document.addEventListener('DOMContentLoaded', ready)
+} else {
+    ready()
 }
-// - item
-function sub() {
-    let value = input.getAttribute("value") ;
-    let prix = document.getElementsByClassName("prix") ; 
-    value = value - 1 ;
-    prix -= prix ;
+function verifier() {
+    alert("bienvenue dans  notre magasin") ;
 }
-// delete items
- 
+// remove items
+function rem() {
+document.getElementById("paragraph").style.visibility="hidden" ;
+}
+function remove() {
+    document.getElementById("text").style.visibility="hidden" ;
+}
+// total
+let cart = document.getElementsByClassName("cart") ;
+let prix = document.getElementsByClassName("price") ;
+function myfunction() {
+    let total = 0 ;
+    total +=  (parseInt(cart[0]) * parseInt(prix[0]) ) +  ( parseInt(cart[1]) * parseInt(prix[1]) ) ;
+    document.getElementsByClassName("total").innerHTML = total ;
+    console.log(cart,prix) ;
+
+}
+
+    
+
+
 

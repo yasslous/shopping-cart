@@ -9,15 +9,18 @@ span {
     content: "\002B";
 }
 body {
-    background-color: white;
+    background-color: rgb(180, 46, 46);
     border-radius: 0mm;
 }
 nav {
-    color: rgb(166, 135, 222);
+    color:maroon;
     font-size: large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
- 
+position: static;
+padding: 20px;
+text-align: center;
+
 }
 .nutella {
     height: 5cm;
@@ -30,20 +33,25 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 70px;
+    padding: 30px;
     
 }
 .image {
-    width: 15%;
+    height: 5cm;
+    width: 5cm;
+    
     text-align: center;
 }
 .chocolat {
-    margin: auto;
+    margin: 70px;
     width: 90%;
     height: 30%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 200px;
+    padding: 30px;
+   
 }
 .minus {
     content: "\002D";
@@ -58,9 +66,11 @@ nav {
     width: 83px;
     padding-top: 27px;
     text-align: center;
-    font-size: 16px;
-    color: #43484D;
+    font-size: 30px;
+    color: black;
     font-weight: 300;
+    font-size: larger;
+    border: solid black 15px;
 }
 .quantity input {
     -webkit-appearance: none;
@@ -68,7 +78,67 @@ nav {
     text-align: center;
     width: 32px;
     font-size: 16px;
-    color: #43484D;
+    color: black;
     font-weight: 300;
+    border: solid black 15px;
   }
+  * {
+    background-color:chocolate;
+    border-radius: 15px 15px 20px 20px;
+   
+    
+  }
+  .paragraph {
+    color: black;
+    font-weight: 200;
+    font-size: medium;
+    font-style: italic;
+}
+.checkout {
+    margin: auto;
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    padding: 30px;
+
+}
+.price {
+    -webkit-appearance: none;
+    border: none;
+    text-align: center;
+    width: 32px;
+    font-size: 30px;
+    color: black;
+    font-weight: 300;
+}
+.total {
+    -webkit-appearance: none;
+    border: none;
+    text-align: center;
+    width: 32px;
+    font-size: 30px;
+    color: black;
+    font-weight: 300;
+
+}
+#total {
+    font-size: 30px;
+} 
+.taux {
+    font-size: 30px;
+}
+.somme {
+    font-size: larger;
+    border: solid black 15px;
+}
+#total {
+    font-size: larger;
+    border: solid black 15px;
+
+}
+ 
+  
    

@@ -7,7 +7,7 @@
     <title>shopping charset</title>
 
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+  
 </head><body>
     <!--nav-->    <nav>
         shopping cart 
@@ -18,27 +18,26 @@
     <span class="heart" >&#10084;</span>
 </button>
 
-<button>
+<button class="fermer"  onclick="rem()" >
 
-    <span class="close">&#10560;</span>
+    <span class="close">X</span>
 </button>
    </div>
-   <div><img class="nutella" src="https://tn.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/63/8552/1.jpg?7950" alt="nutella">
-    <p>Nutella Pâte à tartiner - Noisette - 750 Gr</p>
+   <div class="parent"><img class="nutella" src="https://tn.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/63/8552/1.jpg?7950" alt="nutella">
+    <p id="paragraph">Nutella Pâte à tartiner - Noisette - 750 Gr</p>
 </div>
-<div class="quantity">
-    <button class="plus-btn" type="button" name="button" onclick="add()">
-      +
-    </button>
-    <input type="number" name="name" value="1">
-    <button class="minus-btn" type="button" name="button" onclick="sub()">
-    -
-    </button>
-  </div>
-    <div class="prix"> 
-        
-        30.000dt
+<div class="quantity"> 
+    
+    <input   class="cart"  type="text" size="2" value="1"  >
    
+  </div>
+    <div class="prix"> prix
+        
+       <P > <input class="price" type="text" value="30" min="30" > dt</P>
+   
+    </div>
+
+
     </div>
 </section>
 
@@ -48,45 +47,43 @@
         <div> <button id="input" onclick="button()">
             <span class="heart" >&#10084;</span>
         </button>
-        <button>
+        <button class="fermer" onclick=" remove()">
         
         
-            <span class="close">&#10560;</span>
+            <span class="close">X</span>
         </button>
            </div>
-           <div>
+           <div class="list" >
             <img class="image" src="https://tn.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/06/7953/1.jpg?6503" alt="milka">
-            <p>Milka Lot de 5 tablettes Chocolat milka -luflée</p>
+            <p id="text">Milka Lot de 5 tablettes Chocolat milka -luflée</p>
            </div>
-           <div class="quantity">
-            <button class="plus-btn" type="button" name="button" onclick="add()">
-              +
-            </button>
-            <input type="number" name="name" value="1">
-            <button class="minus-btn" type="button" name="button" onclick="sub()">
-            -
-            </button>
+           <div class="quantity"> 
+            
+            
+            <input  class="cart"  type="text" name="name" value="1" min="1">
+           
           </div>
-           <div class="prix">
-            12.000dt
+           <div class="prix"> prix 
+            <P> <input class="price" type="text" value="7" min="7">dt</P>
 
            </div>
+        </div>
+       
+    
+        
 
 
     </section>
     <!--total-->
     <hr> 
  <div class=”checkout”>
- <div class=”total”>
- <div>
- <div class=”Subtotal”>Sub-Total</div>
- <div class=”items”>2 items</div>
+<p>sub-total</p>
+<p id="total"> <input class="total" type="text" value="0" min="0">dt</p>
+<button id="myBtn" onclick="myfunction()" >calculer</button>
+<button id="check" onclick="verifier()">checkout</button>
  </div>
- <div class=”total-amount”>42.000dt</div>
- </div>
- <button class=”button”>Checkout</button>
- </div>
-   
+ 
+ <script src="script.js"></script>
    
 
 
